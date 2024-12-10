@@ -1,0 +1,90 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+.card{
+    background-color: #19202e;
+    width: 90%; 
+    max-width: 384px; 
+    height: auto;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow:  5px 5px 15px 5px rgba(0, 0, 0, 0.3); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    padding: 35px;
+    .image{
+        border-radius: 30px;
+        position: relative;
+        display:flex;
+        img{
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4c3399;
+            margin: 20px -5px 0px 21px
+        }
+        .sub-content{
+            display: inline-block;
+            h3{
+                color: rgb(234, 229, 229);;
+                margin-bottom: 5px;
+                font-size: 13px;
+            }
+            p{
+                color: #576073;
+                font-size: 12.5px;
+                font-weight: bold;
+            }
+        }
+    }
+    .content{
+        .first-pragraph{
+            color: rgb(234, 229, 229);
+            font-size: 21.5px;
+            margin-bottom: 15px;
+        }
+        .second-pragraph{
+            color: #908f8f;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        padding: 20px; 
+    }
+
+    .image img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .sub-content h3 {
+        font-size: 14px;
+    }
+
+    .sub-content p {
+        font-size: 12px;
+    }
+
+    .content .first-pragraph {
+        font-size: 14px;
+    }
+
+    .content .second-pragraph {
+        font-size: 12px;
+    }
+}
